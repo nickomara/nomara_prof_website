@@ -23,29 +23,38 @@ lines of JavaScript, so anyone can edit it.
 ├── main.js              # mobile menu toggle + footer year
 ├── CNAME                # custom domain (nickomara.com) — do not delete
 ├── assets/
-│   ├── img/             # web-optimized images (headshots)
+│   ├── img/             # web images, named by "slot" (hero.jpg, portrait.jpg, gallery-1.jpg…)
 │   └── files/           # downloadable CV PDF
+├── tools/
+│   └── optimize-photo.py  # resizes a new photo into a slot
+├── EDITING-GUIDE.md     # how to swap photos & edit text (start here)
+├── DEPLOY.md            # first-time deployment steps
 └── source/              # original-resolution source files (CV, headshots, links)
 ```
 
 ## How to update the site
 
-Everything is plain text, so edits are simple.
+**See [`EDITING-GUIDE.md`](EDITING-GUIDE.md) for a full, plain-English walkthrough** of
+swapping photos and editing text. In short:
 
-**Update your CV (PDF):** replace `assets/files/Nicholas_OMara_CV.pdf` with your new file,
-keeping the same filename. The "Download CV" buttons will serve the new version automatically.
+**Swap a photo:** every image is a named "slot" in `assets/img/` (e.g. `hero.jpg`,
+`portrait.jpg`, `theme-fire.jpg`, `gallery-1.jpg`). Drop in a replacement with the helper
+script, which sizes it correctly:
 
-**Edit text** (bio, a publication, a date): open the relevant `.html` file, change the words,
-save.
+```bash
+python3 tools/optimize-photo.py ~/Desktop/new-photo.jpg hero
+```
 
-**Add a publication:** in `publications.html`, copy an existing `<li class="pub">…</li>`
-block, paste it where you want it, and edit the year, title, authors, venue, and DOI link.
+**Update your CV (PDF):** replace `assets/files/Nicholas_OMara_CV.pdf`, keeping the filename.
 
-Then publish your changes:
+**Edit text:** open the relevant `.html` file, change the words (the visible text between
+`>` and `<`), save.
+
+Then publish:
 
 ```bash
 git add .
-git commit -m "Update publications"   # describe your change
+git commit -m "Describe your change"
 git push
 ```
 

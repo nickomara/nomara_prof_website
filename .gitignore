@@ -7,3 +7,8 @@
 *.tmp
 # Editor
 .vscode/
+# Internal planning doc — kept local (contains private contact info; not for the public repo)
+PROJECT_HANDOFF.md
+# Python
+__pycache__/
+*.pyc

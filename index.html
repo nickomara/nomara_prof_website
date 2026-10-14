@@ -7,7 +7,7 @@
   <meta name="description" content="Dr. Nicholas O'Mara is a paleoclimate scientist and biogeochemist at Princeton University studying the history of monsoons, wildfires, and savanna ecosystems in Northwest Africa." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -32,19 +32,16 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container">
+  <section class="hero hero--image">
+    <div class="hero__bg" style="background-image:url('assets/img/about/banner.jpg')"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
       <div class="hero__grid">
         <div>
-          <p class="eyebrow">Paleoclimatologist, Paleoecologist, Organic/stable isotope geochemist</p>
           <h1>Nicholas O'Mara, Ph.D.</h1>
-          <p class="hero__role"><strong>Postdoctoral Research Associate</strong>, Department of Ecology &amp; Evolutionary Biology, Princeton University</p>
-          <div class="hero__tags">
-            <span class="tag">Paleoclimatology</span>
-            <span class="tag">Paleoecology</span>
-            <span class="tag">Paleofires</span>
-            <span class="tag">Organic Geochemistry</span>
-          </div>
+          <p class="eyebrow">Organic and Stable Isotope Geochemist</p>
+          <p class="hero__role"><strong>Postdoctoral Research Associate</strong><br>Department of Ecology &amp; Evolutionary Biology<br>Princeton University</p>
+          <p class="eyebrow" style="margin-bottom:1.4em;">Paleoclimatology | Paleoecology | Paleofires</p>
           <div class="hero__cta">
             <a href="research.html" class="btn">Explore my research</a>
             <a href="assets/files/Nicholas_OMara_CV.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Download CV (PDF)</a>
@@ -64,42 +61,50 @@
               ResearchGate</a>
           </div>
         </div>
-        <img class="hero__photo" src="assets/img/headshot_close.jpg" alt="Portrait of Dr. Nicholas O'Mara" />
+        <img class="hero__photo" src="assets/img/about/headshot.jpg" alt="Portrait of Dr. Nicholas O'Mara" />
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="section section-alt">
-    <div class="container prose">
-      <p class="eyebrow">About</p>
-      <h2>Reading Earth's past to understand fire's future</h2>
-      <p class="lead">I'm a paleoclimate scientist and biogeochemist studying how climate, fire, and ecosystems have shaped one another across Earth's recent past.</p>
-      <p>My research reconstructs the deep history of monsoons, wildfires, and savanna ecosystems in Northwest Africa using organic geochemistry and molecular biomarkers preserved in marine and lake sediments. By reading these natural archives, I trace how rainfall, vegetation, and fire regimes responded to past climate change — from glacial cycles and the Green Sahara to the human-influenced present — and what that history reveals about the future of fire on a warming planet.</p>
-      <p>I'm currently a Postdoctoral Research Associate in the Department of Ecology &amp; Evolutionary Biology at Princeton University. Previously, I was the G.E. Hutchinson Postdoctoral Fellow at the Yale School of the Environment and the Yale Institute for Biospheric Studies. I earned my Ph.D. in Earth and Environmental Sciences at Columbia University and the Lamont-Doherty Earth Observatory, and a B.S. in Geology–Chemistry from Brown University.</p>
+  <section class="section">
+    <div class="container">
+      <div>
+        <div class="prose">
+          <p class="eyebrow">About</p>
+          <h2>Reading Earth's past to understand fire's future</h2>
+          <p>My research is centered on understanding how changes in climate and human activities impact ecosystem compositions, distributions, and fire regimes on timescales of decades to millions of years. I apply and develop interpretive frameworks for molecular and isotopic geochemical paleo-proxy methods to a variety of sedimentary archives to reconstruct past environments with a particular focus on rainfall/vegetation/fire interactions within savanna systems. To further investigate the controls and ecological impacts of past fire regimes, I additionally compile and develop novel methods to statistically synthesize multiple individual paleofire records to assess changes in fire regimes across broad spatial scales.</p>
+          <p>I'm currently a Postdoctoral Research Associate in the Department of Ecology &amp; Evolutionary Biology at Princeton University. Previously, I was a G.E. Hutchinson Postdoctoral Fellow at the Yale School of the Environment and the Yale Institute for Biospheric Studies. I earned my Ph.D. in paleoclimatology at Columbia University's Lamont-Doherty Earth Observatory, after obtaining a B.S. in Geology–Chemistry from Brown University.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- RESEARCH PREVIEW -->
   <section class="section section-alt">
     <div class="container">
-      <p class="eyebrow center">Research themes</p>
-      <h2 class="center" style="margin-bottom:1.4em;">What I study</h2>
+      <h2 class="center" style="margin-bottom:1.4em;">Research Themes</h2>
       <div class="grid grid--3">
-        <div class="card">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6m0 8v6M2 12h6m8 0h6M5 5l4 4m6 6l4 4M5 19l4-4m6-6l4-4"/></svg></div>
-          <h3>Paleoclimate &amp; monsoons</h3>
-          <p>Reconstructing the strength and drivers of the West African monsoon across glacial cycles and the African Humid Period, and the orbital and ocean controls behind them.</p>
+        <div class="card card--media">
+          <img src="assets/img/about/theme-paleohydrology.jpg" alt="Arid mountains of Northwest Africa" />
+          <div class="card__body">
+            <h3>Paleo-hydrology and monsoons</h3>
+            <p>Reconstructing the strength and identifying the drivers of the West African monsoon across Plio-Pleistocene climate transitions, glacial cycles, orbital configurations.</p>
+          </div>
         </div>
-        <div class="card">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c1 3 4 4 4 8a4 4 0 01-8 0c0-1 .5-2 1-3 .5 2 2 2 2 3 1-2-1-5 1-8z"/><path d="M7 14c-1 1-2 3-2 5a7 7 0 0014 0c0-2-1-4-2-5"/></svg></div>
-          <h3>Paleofire history</h3>
-          <p>Developing molecular fire-biomarker proxies to chart how wildfire regimes in African savannas changed from the Last Glacial Maximum through the human-influenced present.</p>
+        <div class="card card--media">
+          <img src="assets/img/about/theme-paleofire.jpg" alt="Smoke drifting over a burning African savanna" />
+          <div class="card__body">
+            <h3>Paleofire history</h3>
+            <p>Developing molecular fire-biomarker proxies and data synthesis methods to track how fire regimes in African savannas have changed through time.</p>
+          </div>
         </div>
-        <div class="card">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/><path d="M9 12l2 2 4-4"/></svg></div>
-          <h3>Ecosystem &amp; vegetation change</h3>
-          <p>Tracking shifts between forest, savanna, and desert using terrestrial plant biomarkers — and linking ecological transitions to climate, fire, and human activity.</p>
+        <div class="card card--media">
+          <img src="assets/img/about/theme-vegetation.jpg" alt="African savanna grassland" />
+          <div class="card__body">
+            <h3>Ecosystem &amp; vegetation change</h3>
+            <p>Tracking shifts between forest, savanna, and desert using terrestrial plant biomarkers — and linking ecological transitions to climate, fire, and human activity.</p>
+          </div>
         </div>
       </div>
       <p class="center" style="margin-top:2em;"><a href="research.html" class="btn">Read more about my research</a></p>
@@ -115,10 +120,6 @@
         <div class="contact-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
           <div><div class="label">Email</div><a href="mailto:nicholas.omara@princeton.edu">nicholas.omara@princeton.edu</a></div>
-        </div>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
-          <div><div class="label">Phone</div><a href="tel:+16315611926">(631) 561-1926</a></div>
         </div>
         <div class="contact-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
